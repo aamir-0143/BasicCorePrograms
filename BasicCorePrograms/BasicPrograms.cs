@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace BasicCoreProblems
+namespace BasicCoreProblems  
 {
-    public class FlipCoin
+    public class BasicPrograms
     {
-        public void Play()
+        public void FlipCoin() 
         {
             Console.WriteLine("Enter the number of times to flip coin");
             double num = Convert.ToDouble(Console.ReadLine());
@@ -32,5 +32,20 @@ namespace BasicCoreProblems
             Console.ReadKey();
 
         }
+            public void LeapYear() 
+            {
+                Console.WriteLine("Enter the year");
+                int year = Convert.ToInt32(Console.ReadLine());
+                if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0))
+                {
+                    Console.WriteLine("{0} is a Leap Year", year);
+                }
+                else
+                {
+                    Console.WriteLine("{0} is not a Leap Year", year);
+                }
+            }
+
+        
     }
 }
