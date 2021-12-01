@@ -8,7 +8,7 @@ namespace BasicCoreProblems
         {
             Console.WriteLine("Enter the Program number which is to be executed \n 1. flipCoin \n 2. LeapYear \n 3. Power");
             Console.WriteLine(" 4. Harmonic \n 5. Factors \n 6. QuotientRemainder \n 7. SwappingNumber");
-            Console.WriteLine("8.Exit");
+            Console.WriteLine(" 8.EvenOdd \n 9. Exit");
             int option = Convert.ToInt32(Console.ReadLine());
             bool flag = true;
             while (flag)
@@ -51,6 +51,11 @@ namespace BasicCoreProblems
                         break;
 
                     case 8:
+                        BasicPrograms num = new BasicPrograms(); 
+                        num.EvenOdd();
+                        break;
+
+                    case 9:
                         flag = false;
                         break;
 

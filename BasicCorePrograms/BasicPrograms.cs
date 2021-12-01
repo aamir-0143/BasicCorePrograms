@@ -101,5 +101,18 @@ namespace BasicCoreProblems
             firstNumber = firstNumber - secondNumber;
             Console.WriteLine("After Swapping these Two Numbers : First number is =" + firstNumber + " and Second number is =" + secondNumber);
         }
+        public void EvenOdd()
+        {
+            Console.WriteLine("Enter the number to Check");
+            int num = Convert.ToInt32(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("{0} is an Even number", num);
+            }
+            else
+            {
+                Console.WriteLine("{0} is an Odd number", num);
+            }
+        }
     } 
 }
