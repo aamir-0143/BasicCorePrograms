@@ -66,6 +66,20 @@ namespace BasicCoreProblems
                 }
                 Console.WriteLine("The Sum of harmonic number is :" + harmonicSum);
         }
-        
+        public void Factors() 
+        {
+                Console.WriteLine("Enter the Number to Calculate Prime Factorization");
+                int num = Convert.ToInt32(Console.ReadLine());
+                for (int i = 2; i <= num; i++)
+                {
+                    if (num % i == 0)
+                    {
+
+                        Console.WriteLine(i);
+                    }
+                }
+        }
     }
+
+    
 }
