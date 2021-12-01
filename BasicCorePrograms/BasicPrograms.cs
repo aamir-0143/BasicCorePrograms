@@ -79,7 +79,16 @@ namespace BasicCoreProblems
                     }
                 }
         }
-    }
-
-    
+        public void QuotientRemainder() 
+        {
+            Console.WriteLine("Enter the Dividend");
+            double dividend = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Enter the Divisor");
+            double divisor = Convert.ToDouble(Console.ReadLine());
+            double quotient = dividend / divisor;
+            double remainder = dividend % divisor;
+            Console.WriteLine("Quotient is : " + quotient);
+            Console.WriteLine("Remainder is : " + remainder);
+        }
+    } 
 }
